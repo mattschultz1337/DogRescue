@@ -9,6 +9,7 @@ class Dog{
     int id;
     char * breed;
   public:
+    Dog();
     Dog(int id, char * breed);
     int getID();
 

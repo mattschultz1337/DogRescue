@@ -16,9 +16,22 @@ bool DogShelter::addDog(Dog *d){
   }
   return false;
 }
+Dog DogShelter::findDog(int id){
+  for(int i=0;i<getNumDogs();i++){
+    if(this->shelter[i]->id==id){
+      return this->shelter[i];
+    }
+  }
+  return NULL;
+}
 bool DogShelter::adopt(int id){
-  
-  return false;
+  Dog * d = this->findDog(id);
+  if(d==NULL)return false;
+  fstream fptr;
+  fptr.open("adopted.log", fstream::app);
+  fptr<<d->id<<"\t"<<d->breed<<std::endl;
+  fptr.close();
+  return true;
 }
 DogShelter::~DogShelter(){
   delete this->shelter;

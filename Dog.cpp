@@ -9,3 +9,7 @@ Dog::Dog(int id, char * breed){
 int Dog::getID(){
   return this->id;
 }
+Dog::Dog(){
+  this->id = 0;
+  this->breed = 'a';
+}
