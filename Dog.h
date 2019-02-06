@@ -1,3 +1,5 @@
+//Matthew Schultz, Giseok Ryu, Ugurcan Demir
+
 #ifndef DOG_H
 #define DOG_H
 #include <iostream>

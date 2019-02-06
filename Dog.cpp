@@ -1,3 +1,5 @@
+//Matthew Schultz, Giseok Ryu, Ugurcan Demir
+
 #include "Dog.h"
 
 Dog::Dog(int id, char * breed){
